@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+    <meta name="SoccerTeam" content="Description of the SoccerTeam" />
+    <meta name="keywords" content="Soccer Team, LHS, Soccer" />
+    <meta name="author" content="Zach Wyatt" />
+    <title>LHS Soccer Team</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+      integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+  </head>
+  <!--Used to navigate the pages; will be placed on each page.-->
+</head>
+
+<body>
+	<style>
+		body {
+			background-image: url("https://render.fineartamerica.com/images/rendered/default/print/8/5.5/break/images-medium-5/grass-background-mphillips007.jpg");
+		}
+	</style>
+	<div class="navigator">
+		<div class="title">
+			<img
+				src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Soccer_ball.svg/2048px-Soccer_ball.svg.png"
+				width="90px"
+				length="90px"
+			/>
+			<h1>Schedule</h1>
+		</div>
+		<ul class="navigation">
+			<li><a href="Sign-Up.html">Sign Up</a></li>
+			<li><a href="Calendar.html">Calendar</a></li>
+			<li><a href="Events.html">Events</a></li>
+			<li><a href="Team.html">Team</a></li>
+			<li><a href="index.html">Home</a></li>
+		</ul>
+	</div>
+	<br>
+	<br>
+
+	<div class="cld-container p-3 my-3 bg-dark text-white">
+	<h1 style="font-size:200%;"><center>Calendar</h1>
+		<p1 style="font-size:100%;"><center>
+			The Calender allows for both parents and students to be able to view what days practice and games are scheduled, when fundraisers are taking place, and if there are any important events the LHS soccer team is holding.
+		</p1>
+		<center>
+			<iframe
+				class="body"
+				src= "https://calendar.google.com/calendar/embed?src=cox.arthur23%40hcschoolstn.org&ctz=America%2FChicagohttps://calendar.google.com/calendar/u/0/r/day/2022/5/3"
+				style="border: 0;"
+				width="800"
+				height="600"
+				frameborder="0"
+				scrolling="no"
+			></iframe>
+		</center>
+	<br>
+	<br>
+
+
+
+	<script>
+		var menuList = document.getElementById("menuList");
+
+		menuList.style.maxHeight = "0px";
+
+		function togglemenu() {
+			if (menuList.style.maxHeight == "0px") {
+				menuList.style.maxHeight = "150px";
+			} else {
+				menuList.style.maxHeight = "0px";
+			}
+		}
+	</script>
+
+</body>

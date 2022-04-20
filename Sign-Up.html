@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+    <meta name="SoccerTeam" content="Description of the SoccerTeam" />
+    <meta name="keywords" content="Soccer Team, LHS, Soccer" />
+    <meta name="author" content="Zach Wyatt" />
+    <title>LHS Soccer Team</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+      integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+  </head>
+  <!--Used to navigate the pages; will be placed on each page.-->
+</head>
+
+<body>
+	<style>
+		body {
+			background-image: url("https://render.fineartamerica.com/images/rendered/default/print/8/5.5/break/images-medium-5/grass-background-mphillips007.jpg");
+		}
+	</style>
+	<div class="navigator">
+		<div class="title">
+			<img
+				src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Soccer_ball.svg/2048px-Soccer_ball.svg.png"
+				width="90px"
+				length="90px"
+			/>
+			<h1>Sign Up</h1>
+		</div>
+		<ul class="navigation">
+			<li><a href="Sign-Up.html">Sign Up</a></li>
+			<li><a href="Calendar.html">Calendar</a></li>
+			<li><a href="Events.html">Events</a></li>
+			<li><a href="Team.html">Team</a></li>
+			<li><a href="index.html">Home</a></li>
+		</ul>
+  </div>
+  <div class="sign-description">
+      <div class="sig-container p-3 my-3 bg-dark text-white">
+          <h1 style="font-size:200%;"><center>Join here!</h1>
+          <p style="font-size:100%;"><center>
+        Contact Coach Childers at childers.kirk@hcschoolstn.org or fill out the form
+        below.
+      </p>
+      <p style="font-size:100%;"><center>Enter your name, grade, number, and parents number below:</p>
+      <p style="font-size:100%;"><center>Name:</p>
+      <input type="text" id="name" /><center>
+      <br />
+      <p style="font-size:100%;"><center>Grade:</p>
+      <input type="text" id="Grade" /><center>
+      <br />
+      <br />
+      <p style="font-size:100%;"><center>
+        Phone Number:
+      </p>
+      <input type="text" class="phone" /><center>
+      <p style="font-size:100%;"><center>
+        Parents Phone Number:
+      </p>
+      <input type="text" class="phone" /><center>
+      <input type="button" onclick="thankYou()" value="submit" />
+    </div>
+    <!---This code does not actually send an e-mail and instead just sends an alert whenever something is typed in.-->
+    <script>
+      function thankYou() {
+        let name = document.getElementById("name").value;
+        let phone = document.getElementsByClassName("phone").value;
+        if (phone == "" || name == "") {
+          alert("Please Enter a Name, Grade, Phone Number, and Parents Phone Number!");
+        } else {
+          alert("Thank you for submitting!");
+        }
+      }
+    </script>
+  </body>
+</html>
